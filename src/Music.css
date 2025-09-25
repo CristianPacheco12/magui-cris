@@ -1,0 +1,103 @@
+/* src/Music.css */
+.music-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.song-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.song-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.song-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.song-info small {
+  display: block;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.song-info p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.song-player iframe {
+  width: 100%; /* ocupa todo el ancho del card */
+  height: 80px;
+  border-radius: 10px;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .section-description {
+    font-size: 0.95rem;
+  }
+  .song-info h3 {
+    font-size: 1.3rem;
+  }
+  .song-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .music-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .section-description {
+    font-size: 0.85rem;
+  }
+  .song-card {
+    padding: 0.8rem;
+  }
+  .song-info h3 {
+    font-size: 1.2rem;
+  }
+  .song-info p {
+    font-size: 0.85rem;
+  }
+  .song-player iframe {
+    height: 60px;
+  }
+}

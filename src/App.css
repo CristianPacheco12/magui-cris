@@ -83,3 +83,64 @@ body, html, #root {
     font-size: 1.1rem;
   }
 }
+
+/* ======= CARRUSEL UNA POR UNA ======= */
+.carousel-one {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.2);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-one button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.6);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.carousel-one .prev {
+  left: 10px;
+}
+
+.carousel-one .next {
+  right: 10px;
+}
+
+.carousel-one button:hover {
+  background: rgba(255,255,255,0.9);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-image {
+    height: 180px;
+  }
+}
